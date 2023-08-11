@@ -1,0 +1,23 @@
+# If there is no rule match, it will pass the URL to the default_browser
+default_browser: "eolie" # Default browser executable
+
+# rules take a top down preference
+
+rules:
+  - url: "http://nixdo" # URL substring to match
+    rewrite_to: "http://nixdo:3000" # Rewritten URL (optional)
+    browser: "eolie" # Browser executable
+
+  - url: "https://mail.google.com/mail/u/0/#inbox" # URL substring to match
+    browser: "google-chrome-stable" # Browser executable - still testing
+    app: true # optional, use with browsers that support the --app flag
+
+  - url: "youtube.com" # URL substring to match
+    browser: "google-chrome-stable" # Browser executable
+    app: false
+
+  - url: "github.com/bashfulrobot" # URL substring to match
+    browser: "google-chrome-stable" # Browser executable
+
+  - url: "github.com" # URL substring to match
+    browser: "google-chrome-stable" # Browser executable
