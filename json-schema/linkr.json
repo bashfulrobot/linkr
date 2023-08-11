@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "default_browser": {
+            "type": "string",
+            "examples": [
+                "epiphany"
+            ]
+        },
+        "rules": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "examples": [
+                            "http://example.com",
+                            "https://mail.google.com/mail/u/0/#inbox"
+                        ]
+                    },
+                    "rewrite_to": {
+                        "type": "string",
+                        "format": "uri",
+                        "examples": [
+                            "http://rewritten.example.com"
+                        ]
+                    },
+                    "browser": {
+                        "type": "string",
+                        "examples": [
+                            "epiphany",
+                            "google-chrome-stable"
+                        ]
+                    },
+                    "app": {
+                        "type": "boolean",
+                        "examples": [
+                            true,
+                            false
+                        ]
+                    }
+                },
+                "required": [
+                    "url",
+                    "browser"
+                ],
+                "additionalProperties": false,
+                "examples": [
+                    {
+                        "url": "http://example.com",
+                        "browser": "epiphany"
+                    },
+                    {
+                        "url": "https://mail.google.com/mail/u/0/#inbox",
+                        "browser": "google-chrome-stable",
+                        "app": true
+                    }
+                ]
+            }
+        }
+    },
+    "required": [
+        "default_browser",
+        "rules"
+    ],
+    "additionalProperties": false,
+    "examples": [
+        {
+            "default_browser": "epiphany",
+            "rules": [
+                {
+                    "url": "http://example.com",
+                    "browser": "epiphany"
+                },
+                {
+                    "url": "https://mail.google.com/mail/u/0/#inbox",
+                    "browser": "google-chrome-stable",
+                    "app": true
+                }
+            ]
+        }
+    ]
+}
