@@ -81,3 +81,9 @@ just deploy
 #### Without `just` on Linux
 
 follow the steps in the `justfile`, mod paths for your system/preferences, and run the commands in your terminal.
+
+## Ideas
+
+- [ ] Rules based on networks
+- [ ] add wildcard support
+- [ ] add a devnull blocker
