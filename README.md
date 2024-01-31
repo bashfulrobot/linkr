@@ -11,6 +11,8 @@
         - [Installing](#installing)
             - [With `just` on Linux](#with-just-on-linux)
             - [Without `just` on Linux](#without-just-on-linux)
+    - [Ideas](#ideas)
+    - [TO DO](#to-do)
 
 ## About <a name = "about"></a>
 
@@ -88,8 +90,7 @@ follow the steps in the `justfile`, mod paths for your system/preferences, and r
 - [ ] add wildcard support
 - [ ] add a devnull blocker
 
-
 ## TO DO
 
-- [ ] create Linux Desktop File
-- [ ] create a "logo" of some kind
+- [x] create Linux Desktop File
+- [x] create a "logo" of some kind

@@ -2,6 +2,7 @@
 Name=Linkr
 Comment=Web Browser rules engine
 Exec=/home/dustin/.local/bin/linkr %u
+Categories=Network;WebBrowser;
 Terminal=false
 Type=Application
 MimeType=x-scheme-handler/http;x-scheme-handler/https;
