@@ -87,3 +87,9 @@ follow the steps in the `justfile`, mod paths for your system/preferences, and r
 - [ ] Rules based on networks
 - [ ] add wildcard support
 - [ ] add a devnull blocker
+
+
+## TO DO
+
+- [ ] create Linux Desktop File
+- [ ] create a "logo" of some kind
